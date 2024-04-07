@@ -30,3 +30,17 @@ def update_employee():
     allows the user to modify the employee's information such as name, department, or salary.
 
     """
+
+
+answer
+def add_employee():
+    """
+    Add Employee Function
+
+    This function prompts the user to input details for a new employee and adds the employee
+    to the system.
+
+    """
+    # Simulating adding an employee by printing a message
+    print("Employee added successfully.")
+
