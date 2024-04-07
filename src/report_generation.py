@@ -15,3 +15,19 @@ def generate_reports():
     - List of employees in each department with ID, full name, date of birth, salary,
       and total salary for department's employees
     """
+ answewr 
+# Employee Reporting Module
+
+# This module is responsible for generating various reports based on employee data.
+
+def generate_reports():
+    """
+    Report Generation Function
+
+    This function generates different types of reports using employee data, including:
+
+    - List of departments
+    - Comprehensive list of employees with their ID, full name, and department
+    - Summary of each department, showcasing the average age and salary of its employees
+    - Detailed breakdown of employees within each department, providing their ID, full name, date of birth, salary, and total departmental salary
+    """
