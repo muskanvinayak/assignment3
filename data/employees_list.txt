@@ -3,3 +3,22 @@ id,first_name,last_name,date_of_birth,start_year,position,salary
 1,John,Doe,1980-05-15,2010,Manager,160000
 2,Jane,Smith,1975-12-20,2005,Engineer,90000 
 3,Alice,Johnson,1990-08-10,2015,Analyst,75000
+import csv
+
+# Define the CSV data
+csv_data = """id,first_name,last_name,date_of_birth,start_year,position,salary
+1,John,Doe,1980-05-15,2010,Manager,160000
+2,Jane,Smith,1975-12-20,2005,Engineer,90000
+3,Alice,Johnson,1990-08-10,2015,Analyst,75000"""
+
+# Split the CSV data into lines
+lines = csv_data.split('\n')
+
+# Open a CSV reader
+reader = csv.DictReader(lines)
+
+# Iterate over each row and print a message
+for row in reader:
+    message = f"{row['first_name']} {row['last_name']} ({row['position']}) started at ABC Company in {row['start_year']}."
+    print(message)
+
