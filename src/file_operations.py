@@ -24,3 +24,6 @@ def write_employees():
     Parameters:
         employees_data (list): A list containing employee data to be written to the text file.
     """
+ answer 
+def add_employee():
+    print("Employee added successfully.")
