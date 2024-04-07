@@ -39,3 +39,39 @@ def main_menu():
             break
         else:
             print("Invalid choice. Please enter a valid option.")
+ answer 
+def main_menu():
+    """
+    Main Menu Function
+    Displays the main menu for the Employee Management System and prompts the user for input.
+    """
+    options = {
+        "1": add_employee,
+        "2": delete_employee,
+        "3": update_employee,
+        "4": generate_reports,
+        "5": exit_program
+    }
+
+    while True:
+        print("\nEmployee Management System")
+        print("1. Add Employee")
+        print("2. Delete Employee")
+        print("3. Update Employee")
+        print("4. Generate Reports")
+        print("5. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice in options:
+            options[choice]()
+        else:
+            print("Invalid choice. Please enter a valid option.")
+
+def exit_program():
+    """
+    Exit Program Function
+    Exits the program.
+    """
+    print("Exiting the program. Goodbye!")
+
